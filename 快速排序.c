@@ -2,7 +2,7 @@
 //#include <stdlib.h>
 //#include <time.h>
 //
-//#define LEN 10
+//#define LEN 10000
 ////交换
 //void swap(int* a, int* b)
 //{
@@ -19,7 +19,7 @@
 //	int temp = a[left], i = left, j = right;
 //	while (i != j)
 //	{
-//		for (; a[j] > temp && i < j; j--);
+//		for (; a[j] >= temp && i < j; j--);
 //		for (; a[i] <= temp && i < j; i++);
 //		if (i < j)
 //			swap(&a[i], &a[j]);
@@ -57,7 +57,7 @@
 //	int i = left, j = right, temp = a[left];
 //	while (i != j)
 //	{
-//		for (; a[j] > temp && i < j; j--);
+//		for (; a[j] >= temp && i < j; j--);
 //		for (; a[i] <= temp && i < j; i++);
 //		if (i < j)
 //			swap(&a[i], &a[j]);
@@ -95,9 +95,9 @@
 //	start = clock();
 //	//quick_sort_double(a,0, LEN-1);
 //	//quick_sort_one(a, 0, LEN - 1);
-//	q_sort_one1(a, 0, LEN - 1);
+//	q_sort(a, 0, LEN - 1);
 //	end = clock();
-//	for (int i = 0; i < 10; i++)
+//	for (int i = 0; i < 100; i++)
 //		printf("a[%d]:%d\n", i, a[i]);
 //	printf("运行的时间：%lfs\n", ((double)end - start) / CLOCKS_PER_SEC);///1s钟的
 //	return 0;

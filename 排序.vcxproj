@@ -142,7 +142,9 @@
     <ClCompile Include="地精和冒泡排序.c" />
     <ClCompile Include="堆排序.c" />
     <ClCompile Include="快速排序.c" />
-    <ClCompile Include="桶排序.c" />
+    <ClCompile Include="插入和希尔排序.c" />
+    <ClCompile Include="桶和基数排序.c" />
+    <ClCompile Include="选择排序.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
